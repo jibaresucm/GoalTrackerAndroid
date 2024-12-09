@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="view.AddActivityEntry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp"
+        android:paddingRight="20dp"
+        app:flow_horizontalAlign="center"
+        app:flow_verticalAlign="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="Title" />
+
+        <EditText
+            android:id="@+id/addActivityEntryTitle"
+            style="@android:style/Widget.AutoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:hint="Title"
+            android:inputType="text"
+            android:textColorHighlight="#5CBF50"
+            android:textColorHint="#5CBF50"
+            android:textColorLink="#5CBF50" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="260dp"
+            android:layout_height="268dp"
+            android:layout_gravity="center"
+            android:drawingCacheQuality="high" />
+
+        <TextView
+            android:id="@+id/addEntryLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/cameraButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#00ABA8"
+            android:isScrollContainer="false"
+            android:text="Take picture"
+            android:textAlignment="center"
+            app:icon="@android:drawable/ic_menu_camera" />
+
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#00ABA8"
+            android:isScrollContainer="false"
+            android:text="Add Location"
+            android:textAlignment="center"
+            app:icon="@android:drawable/ic_dialog_map" />
+
+        <Button
+            android:id="@+id/addActivityBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#5CBF50"
+            android:text="Add" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
